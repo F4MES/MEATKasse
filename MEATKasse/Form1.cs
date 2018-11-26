@@ -217,7 +217,6 @@ namespace MEATKasse
 
         private void textBox14_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button4_Click(object sender, EventArgs e)
