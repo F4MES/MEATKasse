@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Meat));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.turnover = new System.Windows.Forms.Label();
@@ -39,10 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.turnoverDay1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -87,20 +84,20 @@
             this.dk12 = new System.Windows.Forms.TextBox();
             this.dk14 = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.s14 = new System.Windows.Forms.TextBox();
+            this.s12 = new System.Windows.Forms.TextBox();
+            this.s10 = new System.Windows.Forms.TextBox();
+            this.s8 = new System.Windows.Forms.TextBox();
+            this.s6 = new System.Windows.Forms.TextBox();
+            this.s4 = new System.Windows.Forms.TextBox();
+            this.s2 = new System.Windows.Forms.TextBox();
+            this.s13 = new System.Windows.Forms.TextBox();
+            this.s11 = new System.Windows.Forms.TextBox();
+            this.s9 = new System.Windows.Forms.TextBox();
+            this.s7 = new System.Windows.Forms.TextBox();
+            this.s5 = new System.Windows.Forms.TextBox();
+            this.s3 = new System.Windows.Forms.TextBox();
+            this.s1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.sbTotal = new System.Windows.Forms.TextBox();
@@ -140,6 +137,24 @@
             this.label39 = new System.Windows.Forms.Label();
             this.fakturaTotal = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label41 = new System.Windows.Forms.Label();
+            this.tilbankTotal = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.bankTotal = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.kassebeholdmor = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.totalKasse = new System.Windows.Forms.TextBox();
+            this.totalTips = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.kassebehold = new System.Windows.Forms.TextBox();
+            this.kassedif = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblplus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,11 +170,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(737, 627);
+            this.button1.Location = new System.Drawing.Point(506, 586);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(108, 40);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Udregn";
+            this.button1.Text = "Udregn Difference";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -200,7 +215,7 @@
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(4, 293);
+            this.label3.Location = new System.Drawing.Point(15, 293);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(776, 2);
             this.label3.TabIndex = 6;
@@ -224,7 +239,7 @@
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(28, 585);
+            this.label6.Location = new System.Drawing.Point(4, 501);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(776, 2);
             this.label6.TabIndex = 9;
@@ -232,42 +247,10 @@
             // label7
             // 
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(36, 593);
+            this.label7.Location = new System.Drawing.Point(4, 572);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(776, 2);
             this.label7.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Location = new System.Drawing.Point(44, 601);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(776, 2);
-            this.label8.TabIndex = 11;
-            // 
-            // label9
-            // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Location = new System.Drawing.Point(52, 609);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(776, 2);
-            this.label9.TabIndex = 12;
-            // 
-            // label10
-            // 
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Location = new System.Drawing.Point(60, 617);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(776, 2);
-            this.label10.TabIndex = 13;
-            // 
-            // label11
-            // 
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Location = new System.Drawing.Point(31, 622);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(776, 2);
-            this.label11.TabIndex = 14;
             // 
             // label12
             // 
@@ -656,117 +639,118 @@
             this.label30.Text = "SmartBox";
             this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
-            // textBox1
+            // s14
             // 
-            this.textBox1.Location = new System.Drawing.Point(474, 333);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 20);
-            this.textBox1.TabIndex = 72;
-            this.textBox1.Text = "0";
+            this.s14.Location = new System.Drawing.Point(474, 333);
+            this.s14.Name = "s14";
+            this.s14.Size = new System.Drawing.Size(59, 20);
+            this.s14.TabIndex = 72;
+            this.s14.Text = "0";
             // 
-            // textBox2
+            // s12
             // 
-            this.textBox2.Location = new System.Drawing.Point(409, 333);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(59, 20);
-            this.textBox2.TabIndex = 71;
-            this.textBox2.Text = "0";
+            this.s12.Location = new System.Drawing.Point(409, 333);
+            this.s12.Name = "s12";
+            this.s12.Size = new System.Drawing.Size(59, 20);
+            this.s12.TabIndex = 71;
+            this.s12.Text = "0";
             // 
-            // textBox3
+            // s10
             // 
-            this.textBox3.Location = new System.Drawing.Point(344, 333);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(59, 20);
-            this.textBox3.TabIndex = 70;
-            this.textBox3.Text = "0";
+            this.s10.Location = new System.Drawing.Point(344, 333);
+            this.s10.Name = "s10";
+            this.s10.Size = new System.Drawing.Size(59, 20);
+            this.s10.TabIndex = 70;
+            this.s10.Text = "0";
             // 
-            // textBox4
+            // s8
             // 
-            this.textBox4.Location = new System.Drawing.Point(279, 333);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(59, 20);
-            this.textBox4.TabIndex = 69;
-            this.textBox4.Text = "0";
+            this.s8.Location = new System.Drawing.Point(279, 333);
+            this.s8.Name = "s8";
+            this.s8.Size = new System.Drawing.Size(59, 20);
+            this.s8.TabIndex = 69;
+            this.s8.Text = "0";
             // 
-            // textBox5
+            // s6
             // 
-            this.textBox5.Location = new System.Drawing.Point(214, 333);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(59, 20);
-            this.textBox5.TabIndex = 68;
-            this.textBox5.Text = "0";
+            this.s6.Location = new System.Drawing.Point(214, 333);
+            this.s6.Name = "s6";
+            this.s6.Size = new System.Drawing.Size(59, 20);
+            this.s6.TabIndex = 68;
+            this.s6.Text = "0";
             // 
-            // textBox6
+            // s4
             // 
-            this.textBox6.Location = new System.Drawing.Point(149, 333);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(59, 20);
-            this.textBox6.TabIndex = 67;
-            this.textBox6.Text = "0";
+            this.s4.Location = new System.Drawing.Point(149, 333);
+            this.s4.Name = "s4";
+            this.s4.Size = new System.Drawing.Size(59, 20);
+            this.s4.TabIndex = 67;
+            this.s4.Text = "0";
             // 
-            // textBox7
+            // s2
             // 
-            this.textBox7.Location = new System.Drawing.Point(79, 333);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(64, 20);
-            this.textBox7.TabIndex = 66;
-            this.textBox7.Text = "0";
+            this.s2.Location = new System.Drawing.Point(79, 333);
+            this.s2.Name = "s2";
+            this.s2.Size = new System.Drawing.Size(64, 20);
+            this.s2.TabIndex = 66;
+            this.s2.Text = "0";
             // 
-            // textBox8
+            // s13
             // 
-            this.textBox8.Location = new System.Drawing.Point(474, 307);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(59, 20);
-            this.textBox8.TabIndex = 65;
-            this.textBox8.Text = "0";
+            this.s13.Location = new System.Drawing.Point(474, 307);
+            this.s13.Name = "s13";
+            this.s13.Size = new System.Drawing.Size(59, 20);
+            this.s13.TabIndex = 65;
+            this.s13.Text = "0";
             // 
-            // textBox9
+            // s11
             // 
-            this.textBox9.Location = new System.Drawing.Point(409, 307);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(59, 20);
-            this.textBox9.TabIndex = 64;
-            this.textBox9.Text = "0";
+            this.s11.Location = new System.Drawing.Point(409, 307);
+            this.s11.Name = "s11";
+            this.s11.Size = new System.Drawing.Size(59, 20);
+            this.s11.TabIndex = 64;
+            this.s11.Text = "0";
             // 
-            // textBox10
+            // s9
             // 
-            this.textBox10.Location = new System.Drawing.Point(344, 307);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(59, 20);
-            this.textBox10.TabIndex = 63;
-            this.textBox10.Text = "0";
+            this.s9.Location = new System.Drawing.Point(344, 307);
+            this.s9.Name = "s9";
+            this.s9.Size = new System.Drawing.Size(59, 20);
+            this.s9.TabIndex = 63;
+            this.s9.Text = "0";
             // 
-            // textBox11
+            // s7
             // 
-            this.textBox11.Location = new System.Drawing.Point(279, 307);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(59, 20);
-            this.textBox11.TabIndex = 62;
-            this.textBox11.Text = "0";
+            this.s7.Location = new System.Drawing.Point(279, 307);
+            this.s7.Name = "s7";
+            this.s7.Size = new System.Drawing.Size(59, 20);
+            this.s7.TabIndex = 62;
+            this.s7.Text = "0";
             // 
-            // textBox12
+            // s5
             // 
-            this.textBox12.Location = new System.Drawing.Point(214, 307);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(59, 20);
-            this.textBox12.TabIndex = 61;
-            this.textBox12.Text = "0";
+            this.s5.Location = new System.Drawing.Point(214, 307);
+            this.s5.Name = "s5";
+            this.s5.Size = new System.Drawing.Size(59, 20);
+            this.s5.TabIndex = 61;
+            this.s5.Text = "0";
             // 
-            // textBox13
+            // s3
             // 
-            this.textBox13.Location = new System.Drawing.Point(149, 307);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(59, 20);
-            this.textBox13.TabIndex = 60;
-            this.textBox13.Text = "0";
+            this.s3.Location = new System.Drawing.Point(149, 307);
+            this.s3.Name = "s3";
+            this.s3.Size = new System.Drawing.Size(59, 20);
+            this.s3.TabIndex = 60;
+            this.s3.Text = "0";
             // 
-            // textBox14
+            // s1
             // 
-            this.textBox14.Location = new System.Drawing.Point(79, 307);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(64, 20);
-            this.textBox14.TabIndex = 59;
-            this.textBox14.Text = "0";
+            this.s1.Location = new System.Drawing.Point(79, 307);
+            this.s1.Name = "s1";
+            this.s1.Size = new System.Drawing.Size(64, 20);
+            this.s1.TabIndex = 59;
+            this.s1.Text = "0";
+            this.s1.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
             // button4
             // 
@@ -776,6 +760,7 @@
             this.button4.TabIndex = 73;
             this.button4.Text = "Beregn";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label31
             // 
@@ -792,6 +777,7 @@
             this.sbTotal.Name = "sbTotal";
             this.sbTotal.Size = new System.Drawing.Size(100, 20);
             this.sbTotal.TabIndex = 75;
+            this.sbTotal.Text = "0";
             // 
             // button5
             // 
@@ -875,6 +861,7 @@
             this.gebyrTotal.Name = "gebyrTotal";
             this.gebyrTotal.Size = new System.Drawing.Size(100, 20);
             this.gebyrTotal.TabIndex = 77;
+            this.gebyrTotal.Text = "0";
             // 
             // label33
             // 
@@ -984,6 +971,7 @@
             this.udTotal.Name = "udTotal";
             this.udTotal.Size = new System.Drawing.Size(100, 20);
             this.udTotal.TabIndex = 90;
+            this.udTotal.Text = "0";
             // 
             // label37
             // 
@@ -1084,6 +1072,7 @@
             this.fakturaTotal.Name = "fakturaTotal";
             this.fakturaTotal.Size = new System.Drawing.Size(100, 20);
             this.fakturaTotal.TabIndex = 102;
+            this.fakturaTotal.Text = "0";
             // 
             // label40
             // 
@@ -1094,11 +1083,182 @@
             this.label40.TabIndex = 101;
             this.label40.Text = "Faktura";
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(79, 462);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(108, 36);
+            this.button8.TabIndex = 112;
+            this.button8.Text = "Beregn til bank";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(12, 474);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(45, 13);
+            this.label41.TabIndex = 113;
+            this.label41.Text = "Til bank";
+            // 
+            // tilbankTotal
+            // 
+            this.tilbankTotal.Location = new System.Drawing.Point(193, 471);
+            this.tilbankTotal.Name = "tilbankTotal";
+            this.tilbankTotal.Size = new System.Drawing.Size(100, 20);
+            this.tilbankTotal.TabIndex = 114;
+            this.tilbankTotal.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(506, 462);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(108, 36);
+            this.button9.TabIndex = 115;
+            this.button9.Text = "Afrunding";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // bankTotal
+            // 
+            this.bankTotal.Location = new System.Drawing.Point(688, 471);
+            this.bankTotal.Name = "bankTotal";
+            this.bankTotal.Size = new System.Drawing.Size(100, 20);
+            this.bankTotal.TabIndex = 116;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(12, 519);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(98, 13);
+            this.label42.TabIndex = 117;
+            this.label42.Text = "Kassebehold. aften";
+            // 
+            // kassebeholdmor
+            // 
+            this.kassebeholdmor.Location = new System.Drawing.Point(688, 89);
+            this.kassebeholdmor.Name = "kassebeholdmor";
+            this.kassebeholdmor.Size = new System.Drawing.Size(100, 20);
+            this.kassebeholdmor.TabIndex = 118;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(566, 89);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(117, 13);
+            this.label43.TabIndex = 119;
+            this.label43.Text = "Kassse behold. morgen";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(200, 519);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(73, 13);
+            this.label44.TabIndex = 120;
+            this.label44.Text = "Total i kassen";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(341, 519);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(93, 13);
+            this.label45.TabIndex = 121;
+            this.label45.Text = "Total drikkepenge";
+            this.label45.Click += new System.EventHandler(this.label45_Click);
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(638, 474);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(45, 13);
+            this.label46.TabIndex = 122;
+            this.label46.Text = "Til bank";
+            // 
+            // totalKasse
+            // 
+            this.totalKasse.Location = new System.Drawing.Point(182, 535);
+            this.totalKasse.Name = "totalKasse";
+            this.totalKasse.Size = new System.Drawing.Size(100, 20);
+            this.totalKasse.TabIndex = 123;
+            // 
+            // totalTips
+            // 
+            this.totalTips.Location = new System.Drawing.Point(334, 535);
+            this.totalTips.Name = "totalTips";
+            this.totalTips.Size = new System.Drawing.Size(100, 20);
+            this.totalTips.TabIndex = 124;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(506, 526);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(108, 36);
+            this.button10.TabIndex = 125;
+            this.button10.Text = "Beregn";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // kassebehold
+            // 
+            this.kassebehold.Location = new System.Drawing.Point(689, 535);
+            this.kassebehold.Name = "kassebehold";
+            this.kassebehold.Size = new System.Drawing.Size(100, 20);
+            this.kassebehold.TabIndex = 126;
+            // 
+            // kassedif
+            // 
+            this.kassedif.Location = new System.Drawing.Point(688, 597);
+            this.kassedif.Name = "kassedif";
+            this.kassedif.Size = new System.Drawing.Size(100, 20);
+            this.kassedif.TabIndex = 127;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(165, 558);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(147, 14);
+            this.label8.TabIndex = 128;
+            this.label8.Text = "inkl. til bank og drikkepenge";
+            // 
+            // lblplus
+            // 
+            this.lblplus.AutoSize = true;
+            this.lblplus.Location = new System.Drawing.Point(671, 600);
+            this.lblplus.Name = "lblplus";
+            this.lblplus.Size = new System.Drawing.Size(0, 13);
+            this.lblplus.TabIndex = 129;
+            // 
             // Meat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 662);
+            this.Controls.Add(this.lblplus);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.kassedif);
+            this.Controls.Add(this.kassebehold);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.totalTips);
+            this.Controls.Add(this.totalKasse);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.label45);
+            this.Controls.Add(this.label44);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.kassebeholdmor);
+            this.Controls.Add(this.label42);
+            this.Controls.Add(this.bankTotal);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.tilbankTotal);
+            this.Controls.Add(this.label41);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.f7);
             this.Controls.Add(this.f6);
@@ -1138,20 +1298,20 @@
             this.Controls.Add(this.sbTotal);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.s14);
+            this.Controls.Add(this.s12);
+            this.Controls.Add(this.s10);
+            this.Controls.Add(this.s8);
+            this.Controls.Add(this.s6);
+            this.Controls.Add(this.s4);
+            this.Controls.Add(this.s2);
+            this.Controls.Add(this.s13);
+            this.Controls.Add(this.s11);
+            this.Controls.Add(this.s9);
+            this.Controls.Add(this.s7);
+            this.Controls.Add(this.s5);
+            this.Controls.Add(this.s3);
+            this.Controls.Add(this.s1);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.dk14);
             this.Controls.Add(this.dk12);
@@ -1196,10 +1356,6 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.turnoverDay1);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -1211,8 +1367,9 @@
             this.Controls.Add(this.turnover);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Meat";
-            this.Text = "Meat Kasse Opgørelse";
+            this.Text = "MEAT";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1233,10 +1390,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox turnoverDay1;
         private System.Windows.Forms.Label label13;
@@ -1281,20 +1434,20 @@
         private System.Windows.Forms.TextBox dk12;
         private System.Windows.Forms.TextBox dk14;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox s14;
+        private System.Windows.Forms.TextBox s12;
+        private System.Windows.Forms.TextBox s10;
+        private System.Windows.Forms.TextBox s8;
+        private System.Windows.Forms.TextBox s6;
+        private System.Windows.Forms.TextBox s4;
+        private System.Windows.Forms.TextBox s2;
+        private System.Windows.Forms.TextBox s13;
+        private System.Windows.Forms.TextBox s11;
+        private System.Windows.Forms.TextBox s9;
+        private System.Windows.Forms.TextBox s7;
+        private System.Windows.Forms.TextBox s5;
+        private System.Windows.Forms.TextBox s3;
+        private System.Windows.Forms.TextBox s1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox sbTotal;
@@ -1334,6 +1487,24 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.TextBox fakturaTotal;
         private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox tilbankTotal;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TextBox bankTotal;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox kassebeholdmor;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox totalKasse;
+        private System.Windows.Forms.TextBox totalTips;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox kassebehold;
+        private System.Windows.Forms.TextBox kassedif;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblplus;
     }
 }
 
